@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "ncv";
+    src: url(/DELIRIUM\ NCV.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ncv";
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#dbdfdd 2%, #86b2a3, #86b2a3);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.nav{
+    width: 100%;
+    height: 14vh;
+    padding: 0 4vw;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.nav i{
+    color: white;
+}
+.nav .center{
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.nav .center h3{
+    font-size: 2.2vw;
+    font-weight: 100;
+}
+
+.nav .center .line{
+    width: 7vw;
+    height: 3px;
+    background-color: #799c90;
+}
+
+.maintext{
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.maintext .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.maintext .row h4{
+    color: white;
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.maintext .row h4:nth-child(2){
+    color: #425951;
+}
+.maintext>h1{
+    font-size: 12vw;
+    color: white;
+    font-weight: 100;
+    line-height: 10vw;
+}
+
+.main #one{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 35vw;
+}
+
+.main #two{
+    position: absolute;
+    top: 55%;
+    left: -10%;
+    transform: translate(0, -50%);
+    width: 22vw;
+}
+
+.main #three{
+    position: absolute;
+    top: 55%;
+    right: -7%;
+    transform: translate(0, -50%);
+    width: 22vw;
+}
+
+.bottom{
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bottom img{
+    width: 80%;
+}
+.bottom p{
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 30px 0;
+}
+
+.bottom button{
+    padding: .8vw 3.5vw;
+    border: none;
+    outline: none;
+    background-color: #cafae9;
+    color: #2c5848;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+@media (max-width:500px) {
+    .nav{
+        height: 12vh;
+    }
+    .nav .center{
+        gap:3vw;
+    }
+    .nav .center h3 {
+        font-size: 7vw;
+        white-space: nowrap;
+    }
+
+    .nav .center .line {
+        width: 14vw;
+    }
+
+    .maintext{
+        top: 30%;
+    }
+    .maintext>h1{
+        white-space: nowrap;
+        font-size: 25vw;
+        line-height: 22vw;
+    }
+
+    .maintext .row h4{
+        font-size: 5vw;
+    }
+
+    .main #one {
+        width: 65vw;
+    }
+    .main #two {
+        width: 27vw;
+    }
+    .main #three{
+        width: 24vw;
+    }
+
+    .bottom{
+        width: 85%;
+    }
+
+    .bottom img {
+        width: 100%;
+    }
+    .bottom p {
+        width: 95%;
+    }
+    .bottom button {
+        padding: 2.8vw 7.5vw;
+    }
+
+}
